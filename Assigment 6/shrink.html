@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shrink property</title>
+    </head>
+    <body>
+        <h2 style="font-size: 35px; border-radius: 30px; color: crimson;font-style: italic; border:3px solid black; text-align: center;"> FlexBox And flexbox property in css</h2>
+        <div class="flex-container2">
+            <div class="shrink" style="flex-shrink: 0;">F</div>
+            <div class="shrink" style="flex-shrink: 10;">W</div>
+            <div class="shrink" style="flex-shrink: 0;">W</div>
+            <div class="shrink" style="flex-shrink: 10;">T</div>
+        </div>
+        <style>
+        .flex-container2{
+            display: flex;
+            background-color: rgb(228, 69, 180);
+            border: 3px double #16a6b9;
+            flex-direction: row;
+            width: 350px;
+            height: 250px;
+            text-align: center;
+        }
+        .shrink{
+            background-color: greenyellow;
+            flex-grow: 1;
+          flex-basis: 100px;
+          flex-shrink: 1;
+          font-size: 25px;
+          font-style: italic;
+          margin: 10px;
+          padding: 5px;
+                   
+        }  
+    </style>
+    </body>
+</html>

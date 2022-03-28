@@ -1,0 +1,38 @@
+body{
+    background-image: url(butterfly.jpg) ;
+}
+h1{
+    font-style: italic;
+    color: orangered;
+    text-transform: uppercase;
+    text-decoration: underline;
+   
+    text-align: center;
+}
+p{
+    font-size: 35px;
+    color: blue;
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 3px solid rgb(230, 207, 9);
+    border-style: double;
+    border-radius: 30px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    width: 600px;
+    height: 530px;
+}
+.flex-container > div{
+    background-color: grey;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    width: 550px;
+    height: 300px;
+    color: rgb(5, 5, 5);
+}

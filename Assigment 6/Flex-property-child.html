@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBos Tutorial</title>
+    </head>
+    <body>
+        <h2 style="font-size: 35px; border-radius: 30px; color: crimson;font-style: italic; border:3px solid black; text-align: center;"> FlexBox And flexbox property in css</h2>
+	    <h4 style="text-align: center; color: blueviolet; font-size: 20px;font-style: italic;text-decoration: underline;"> flexbox property To Child class</h4>
+        
+        <p><b>Flex Grow</b> Property to Child Class <b>Ganesh</b></p>
+        <div class="flex-container">
+            <div class="Ganesh" style="flex-grow:1;">Facebook</div>
+            <div class="Ganesh" style="flex-grow:50;">WhatsApp</div>
+            <div class="Ganesh" style="flex-grow:1;">Instagram</div>
+            <div class="Ganesh" style="flex-grow:0;">TikTok</div>
+        </div>
+        <style>
+            body{
+                background-color: rgb(143, 201, 219);
+            }
+            .flex-container{
+                display: flex;
+                background-color: rgb(10, 44, 3);
+                flex-flow: wrap row;
+                justify-content:center ;
+            }
+            .Ganesh{
+                background-color: brown;
+                margin: 10px;
+                padding: 15px;
+                font-size: 35px;
+                text-align: center;
+                /* width: 500px;
+                height: 50px; */
+                font-style: italic;
+                color: darkgrey;
+                                      /* FLAX-BESIS PROPERTY TO THE CHILD CLASS*/
+            }</style><hr><br>
+              <p><b>Flex Basis</b> Property to Child Class <b>Basis</b></p>
+              <div class="flex-container1">
+                  <div class="basis" style="flex-basis: 300px;" >Facebook</div>
+                  <div class="basis" style="flex-basis: 0px;">WhatsApp</div>
+                  <div class="basis" style="flex-basis: 500px;">Instagram</div>
+                  <div class="basis" style="flex-basis: 0px;">TikTok</div>
+              </div>
+            <style>
+            .flex-container1{
+                display: flex;
+                background-color: rgb(191, 221, 21);
+                flex-flow: wrap row;
+                justify-content:space-evenly ;
+                /* width: 1000px; */
+                border: 3px dotted black;
+            }
+            .basis{
+                background-color: rgb(18, 72, 153);
+                margin: 10px;
+                padding: 15px;
+                font-size: 35px;
+                border: 2px solid red;
+                border-radius: 25px;
+                text-align: center;
+                /* width: 500px;
+                height: 50px; */
+                font-style: italic;
+                color: darkgrey;
+            }
+        </style><hr><br>
+        <p><b>Flex Shrink</b> Property to Child Class <b>Shrink</b></p>
+        <div class="flex-container2">
+            <div style="background-color:aqua;" >F</div>
+            <div style="background-color: green;">W</div>
+            <div style="background-color: yellow;">I</div>
+            <div style="background-color: brown;">T</div>
+        </div>
+      <style>
+      .flex-container2{
+          display: flex;
+          background-color: rgb(228, 69, 180);
+          border: 3px double #16a6b9;
+          flex-direction: column;
+          width: 350px;
+          height: 350px;
+          
+      }
+    
+      .flex-container2>div{
+          flex-grow: 1;
+          flex-basis: 100px;
+          flex-shrink: 1;
+          font-size: 25px;
+          font-style: italic;
+          margin: 10px;
+          padding: 5px;
+      }
+      .flex-container2 div:nth-of-type(2){
+        flex-shrink: 20;
+      }
+
+  </style>
+    </body>
+</html>

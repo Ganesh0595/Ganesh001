@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Tutorial</title>
+</head>
+<body>
+	<style>
+		body{
+			background-color:rgb(114, 189, 85);
+		}
+	.flex-container {
+		display:flex;
+        flex-wrap: wrap-reverse;/* flex-wrap Property:-wrap,wrap-reverse */
+		flex-direction:column-reverse;/* flex-Direction Property:-Column,row,column-reverse,row-reverse.*/
+        justify-content:center; 
+		background-color: rgb(14, 68, 168)
+	}
+	.raj {
+		background-color: gray;
+		margin: 10px;
+		padding: 15px;
+        font-style: italic;
+        color: purple;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-position: right top;
+        text-align: center;
+	}
+	</style>
+	<h2 style="font-size: 35px; color: crimson;font-style: italic; border:3px solid black; text-align: center;"> FlexBox And flexbox property in css</h2>
+	<h4 style="text-align: center; color: blueviolet; font-size: 20px;font-style: italic;text-decoration: underline;"> flexbox property</h4>
+	<h2>Flex Wrap & Direction Property </h2>
+	<p><b>flex-wrap Property:-</b>wrap,wrap-reverse & <b>flex-Direction Property:-</b>Column,row,column-reverse,row-reverse.</p>
+	<div class="flex-container">
+		<div class="raj">HTML</div>
+		<div class="raj">CSS</div>
+		<div class="raj">JAVASCRIPT</div>
+		<div class="raj">PYTHON</div>
+		<div class="raj">PHP</div>
+		
+	</div>	<hr>
+	<style>
+		.flex-container1 {
+		display:flex;
+		flex-flow: wrap row ;/* flex-Flow Property:-wrap row,wrap column */
+		justify-content:space-evenly;/* Justify-content Property:-center,right,left,flex-start,flex-end,first baseline,last baseline,space-around,space-between,space-evenly,*/
+		background-color: rgb(247, 9, 175)
+	}
+	
+	.vir {
+		background-color: rgb(32, 248, 237);
+		margin: 10px;
+		padding: 15px;
+		
+        font-style: italic;
+        color: rgb(216, 17, 67);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-position: right top;
+        text-align: center;
+	}
+  
+	</style>
+	<h2>Flex Flow Property </h2>
+	<p><b>flex-Flow Property:-</b>wrap row,wrap column & <b>Justify-content Property:-</b>center,right,left,flex-start,flex-end,first baseline,last baseline,space-around,space-between,space-evenly </p>
+	<div class="flex-container1">
+		<div class="vir">HTML</div>
+		<div class="vir">CSS</div>
+		<div class="vir">JAVASCRIPT</div>
+		<div class="vir">PYTHON</div>
+		<div class="vir">PHP</div>
+		
+	</div>	
+		
+</body>
+
+</html>

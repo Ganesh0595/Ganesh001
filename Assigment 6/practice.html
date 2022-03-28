@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container{
+                display: flex;
+                background-color: rgb(194, 223, 31);
+                width: 350px;
+                height: 250px;
+                flex-direction: row;
+                border: 2px solid black;
+                text-align: center;
+               
+            }
+            .flex-container>div{
+                color: darkgray;
+                flex-grow: 1;
+                flex-basis: 100px;
+                flex-shrink: 1;
+                font-size: 25px;
+                margin: 15px;
+                padding: 10px;
+                background-color: darkorange;
+            }
+            .flex-container div:nth-of-type(3){
+                flex-shrink: 20;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex-container</h1>
+        <div class="flex-container">
+            <div style="background-color: red;">1</div>
+            <div style="background-color: paleturquoise;">2</div>
+            <div style="background-color: purple;">3</div>
+            <div style="background-color: green;">4</div>
+        </div>
+
+    </body>
+</html>
