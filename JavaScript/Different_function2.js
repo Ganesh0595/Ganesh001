@@ -21,6 +21,4 @@ var num2=[5,6,7,8,9];
 var mergedArray = num1.concat(num2);//Concating the two different string
 console.log(mergedArray);
 
-num1.splice
-
 
