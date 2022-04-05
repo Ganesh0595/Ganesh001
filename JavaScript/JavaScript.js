@@ -1,28 +1,48 @@
-//Addition of Two Number Using Function
-function Addition(num1,num2){
-    var additionof2Number = num1 + num2;
-    console.log("Addition of Two Number is :- " + additionof2Number);
+console.log('external js file imported');
+
+function getUserDetails() {
+
+    var userName = document.getElementById('name').value;
+    var passWord = document.getElementById('password').value;
+
+    document.getElementById('duplicateName').value = userName;
+
+    console.log('username is:  ' + userName);
+    console.log('password is:  ' + passWord);
 }
 
-Addition(42,50)
-
-//Substraction of Two Number Using Function
-function Substraction(num1,num2){
-    var substractionof2Number = num1 - num2;
-    console.log("Substraction of Two Number is :- " + substractionof2Number);
+function secondFuntion(){
+    console.log('second funtion called ');
 }
-Substraction(175,50)
 
-//Multiplication of Two Number Using Function
-function Multiplication(num1,num2){
-    var multiplicationof2Number = num1 * num2;
-    console.log("Multiplication of Two Number is :- " + multiplicationof2Number);
-}
-Multiplication(7,50)
+function setOperation(operation){  
 
-//Division of Two Number Using Function
-function Division(num1,num2){
-    var divisionof2Number = num1 / num2;
-    console.log("Division of Two Number is :- " + divisionof2Number);
+    document.getElementById('operation').value = operation;
 }
-Division(2551,50)
+
+function calculator(){
+
+    var operation = document.getElementById('operation').value;
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    var sum = 0;
+    if(operation == 'add'){
+         sum =  parseInt(num1)  + parseInt(num2) ;
+    } else if(operation == 'sub') {
+        sum = parseInt(num1)  - parseInt(num2);
+    } else if(operation == 'mul') {
+        sum = parseInt(num1)  * parseInt(num2);
+    }else if(operation == 'div') {
+        sum = parseInt(num1)  / parseInt(num2);
+    } else {
+        alert('Please select the operation');
+    }
+
+    
+   
+    document.getElementById('result').value = sum;
+    
+}
+
+
+
